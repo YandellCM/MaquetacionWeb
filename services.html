@@ -2,31 +2,45 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Porsche</title>
-    <link rel="stylesheet" href="porsche.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Porsche USA</title>
+    <link rel="stylesheet" href="porsche.css" />
 </head>
 
-<body id="top-services">
+<body id="inicio-services">
 
     <nav class="menu">
         <a href="index.html">Volver a Home</a>
-        <a href="#services">Servicios</a>
+        <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
+        <a href="#ubicacion">Ubicación</a>
     </nav>
 
     <div class="espacio-nav"></div>
 
-    <main>
-        <header id="services">
-            <h1>Services</h1>
-            <p>Opciones de servicio y soporte para tu Porsche.</p>
-        </header>
+    <header class="hero-services">
+        <div class="hero-text">
+            <p>Soporte, mantenimiento y atención premium para tu Porsche.</p>
+        </div>
 
-        <section>
+        <div class="hero-img">
+            <img src="imgserv.jpg" alt="Técnico mecánico especializado" />
+        </div>
+    </header>
+
+    <main>
+        <section id="servicios">
             <h2>Servicios disponibles</h2>
+
             <div class="grid">
+                <article class="card">
+                    <div class="texto">
+                        <h3>Service & Maintenance</h3>
+                        <p>Mantenimientos preventivos, revisión general y diagnósticos.</p>
+                    </div>
+                </article>
+
                 <article class="card">
                     <div class="texto">
                         <h3>Original Accessories</h3>
@@ -36,15 +50,29 @@
 
                 <article class="card">
                     <div class="texto">
-                        <h3>Service &amp; Maintenance</h3>
-                        <p>Servicios de mantenimiento y revisiones programadas.</p>
+                        <h3>Recall Information</h3>
+                        <p>Consulta campañas, actualizaciones y llamados a revisión.</p>
                     </div>
                 </article>
 
                 <article class="card">
                     <div class="texto">
-                        <h3>Recall Information</h3>
-                        <p>Información sobre campañas y llamados a revisión.</p>
+                        <h3>Classic – Service Parts</h3>
+                        <p>Repuestos y mantenimiento para modelos Porsche Classic.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="texto">
+                        <h3>Porsche Protection Plan</h3>
+                        <p>Planes de protección y coberturas extendidas.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="texto">
+                        <h3>Delivery Programs</h3>
+                        <p>Programas de entrega y experiencias de recogida del vehículo.</p>
                     </div>
                 </article>
             </div>
@@ -52,19 +80,57 @@
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>Escríbenos directamente por correo:</p>
-            <p>
-                <a class="boton" href="mailto:soporteclientes@porsche.com">
-                    soporteclientes@porsche.com
-                </a>
-            </p>
+
+            <aside class="contacto-box">
+                <p>Completa el formulario y te respondemos lo antes posible.</p>
+
+                <form class="form-contacto" action="#" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+
+                    <label for="correo">Correo</label>
+                    <input id="correo" name="correo" type="email" placeholder="tu@email.com" required />
+
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" name="telefono" type="tel" placeholder="(809) 000-0000" />
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu solicitud..."
+                        required></textarea>
+
+                    <button class="btn-enviar" type="submit">Enviar</button>
+                </form>
+            </aside>
         </section>
     </main>
 
-    <footer class="footer-porsche">
+    <footer id="ubicacion" class="footer-porsche">
         <div class="footer-wrap">
+            <div class="footer-grid">
+                <section class="footer-col">
+                    <h3>Ubicación</h3>
+                    <p>Porsche Center Santo Domingo</p>
+                    <p>Av. Simón Bolívar 965, Santo Domingo 10108</p>
+                </section>
+
+                <section class="footer-col">
+                    <h3>Contacto</h3>
+                    <a class="footer-link" href="mailto:soporteclientes@porsche.com">soporteclientes@porsche.com</a>
+                    <a class="footer-link" href="https://www.instagram.com/porsche/" target="_blank">Instagram</a>
+                </section>
+            </div>
+
+            <div class="mapa-box">
+                <iframe title="Mapa Porsche Center Santo Domingo"
+                    src="https://www.google.com/maps?q=Porsche+Center+Santo+Domingo,+Av+Sim%C3%B3n+Bol%C3%ADvar+965,+Santo+Domingo+10108&output=embed"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <hr class="footer-line">
+
             <p class="footer-legal">
-                ©️ 2025 Porsche Cars North America, Inc. Privacy notice. Accessibility Statement.
+                ©️ 2025 Porsche Cars North America, Inc. Legal notice. Privacy notice. Accessibility Statement.
             </p>
         </div>
     </footer>
