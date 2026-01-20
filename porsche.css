@@ -525,6 +525,7 @@ aside {
         margin-right: auto;
     }
 
+
     .mapa-box iframe {
         height: 220px;
     }
@@ -532,4 +533,10 @@ aside {
     .hero-img img {
         height: 240px;
     }
+}
+
+.menu a:hover,
+.menu a:focus {
+    background: #0b0b0c;
+    color: #ffffff;
 }
